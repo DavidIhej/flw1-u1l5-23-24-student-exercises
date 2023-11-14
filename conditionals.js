@@ -1,5 +1,8 @@
 function quizGame() {
     let answer1 = prompt("What is the capital of France?").toLowerCase();
+  if (answer1 === "paris"){
+    alert( "Correct")
+  } else (alert("wrong"))
 
     // 1. Write a conditonal statement that checks if answer1 is equal to "paris".
     //  - If true, alert "Correct!"
@@ -10,7 +13,12 @@ function quizGame() {
     
    
     let answer2 = parseInt(prompt("How many legs does an insect have? (Enter a number)"));
-
+  if (answer2 === 6){
+    alert( "Correct")
+  } else if (answer2 < 6)
+    (alert("Too Low. Insects have 6 legs"))
+  if (answer2 > 6)
+    alert("Too high. Insects have 6 legs")
     // 2. Write a conditonal statement that checks if answer2 is 6.
     //  - If true, alert "Correct!"
     //  - Else if answer2 is less than 6, alert "Too low! Insects have 6 legs."

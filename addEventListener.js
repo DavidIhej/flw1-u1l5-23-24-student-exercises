@@ -5,17 +5,22 @@ let alertButton = document.querySelector(".alert-button");
 let coordinateButton = document.querySelector(".coordinate-button");
 
 // Function we will use in our third task.
-function getCoordinates(event) {
+coordinateButton.addEventListener("click" , function() {
     console.log(`X: ${event.clientX}, Y: ${event.clientY}`);
-}
+})
 
+consoleButton.addEventListener("click" , function() {
+  console.log("button clicked")
+})
 // 1. Add the event listener for consoleButton.
 //  - Select the variable.
 //  - Add the .addEventListener method.
 //  - The event type is "click".
 //  - The function should log whatever message you want to the console.
 
-
+alertButton.addEventListener("click" , function() {
+  alert("yes")
+})
 // 2. Add the event listener for alertButton.
 //  - Select the variable.
 //  - Add the .addEventListener method.
